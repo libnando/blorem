@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace blorem.Pages
+namespace Blorem.Presentation.Main.Pages
 {
     public class ErrorModel : PageModel
     {

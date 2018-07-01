@@ -9,9 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using blorem.Hubs;
+using Blorem.Presentation.Main.Hubs;
 
-namespace blorem
+namespace Blorem.Presentation.Main
 {
     public class Startup
     {
