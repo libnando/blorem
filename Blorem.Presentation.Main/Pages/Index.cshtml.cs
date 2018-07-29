@@ -7,11 +7,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Blorem.Presentation.Main.Pages
 {
+    
     public class IndexModel : PageModel
     {
+
         public void OnGet()
         {
-
+            
         }
+
     }
 }

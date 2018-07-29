@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  appblorem:
+    image: blorem
+    build:
+      context: .
+    ports:
+      - "8000:80"
+    networks:
+      - blorem-network
+    depends_on:
+      - "redisblorem"
+
+  redisblorem:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - blorem-network
+
+networks: 
+    blorem-network:
+        driver: bridge
