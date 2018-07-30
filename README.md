@@ -15,9 +15,7 @@ DDD Skeleton for Asp.Net Core Web Applications
 
 ```
 docker build -f w_app.Dockerfile -t bapp .
-
 docker build -f w_scheduler.Dockerfile -t bscheduler .
-
 docker-compose up -d
 ```
 
