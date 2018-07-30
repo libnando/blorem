@@ -2,8 +2,9 @@ version: '3'
 
 services:
   appblorem:
-    image: blorem
+    image: bapp
     build:
+      dockerfile: w_app.Dockerfile
       context: .
     ports:
       - "8000:80"
@@ -11,13 +12,24 @@ services:
       - blorem-network
     depends_on:
       - "redisblorem"
-
+    container_name: blorem_app
+  
+  schedulerblorem:    
+    image: bscheduler
+    build:
+      dockerfile: w_scheduler.Dockerfile
+      context: .    
+    networks:
+      - blorem-network    
+    container_name: blorem_scheduler
+      
   redisblorem:
     image: redis:alpine
     ports:
       - "6379:6379"
     networks:
       - blorem-network
+    container_name: blorem_cache
 
 networks: 
     blorem-network:

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
-using Blorem.Presentation.Main.Caching;
+using Blorem.Infrastructure.Framework.Caching;
 using System;
 
 namespace Blorem.Presentation.Main.Hubs

@@ -1,25 +1,23 @@
 # Blorem
 
-DDD Skeleton for .Net Core Web Applications
+DDD Skeleton for Asp.Net Core Web Applications
 
 - Scheduler (Quartz)
 - Caching (Redis)
-- IoC (Autofac)
-- ReactJS
-- Dapper
+- IoC (Autofac) (todo...)
+- ReactJS (todo...)
+- Dapper (todo...)
 - SignalR Core
-- Unit Tests
-
-#### app
-
-```
-dotnet run
-```
+- Docker 
+- Docker Compose
 
 #### docker (+docker-compose)
 
 ```
-docker build -t blorem .
+docker build -f w_app.Dockerfile -t bapp .
+
+docker build -f w_scheduler.Dockerfile -t bscheduler .
+
 docker-compose up -d
 ```
 
